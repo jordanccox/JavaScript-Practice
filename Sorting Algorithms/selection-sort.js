@@ -1,6 +1,6 @@
 function selectionSort(array) {
 
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length - 1; i++) {
         let min = array[i];
         let j = i + 1;
         let index = i;
@@ -23,4 +23,4 @@ function selectionSort(array) {
 
 const arr = [8, 3, 2, 1, 6, 3, 4, 9, 5, 2, 7, 11, 14, 29];
 
-console.log(selectionSort(arr));
+console.log(selectionSort(arr).join(" "));

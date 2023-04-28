@@ -1,4 +1,4 @@
-// Arrays A and B store some integer in n-bits
+// Arrays A and B store some integer in n-bits (A.length and B.length)
 
 function addBinaryIntegers(A, B) {
     let a = 0;
@@ -48,4 +48,4 @@ const binary96 = addBinaryIntegers(binary9, binary87);
 
 console.log(binary34);
 console.log(binary87);
-console.log(binary96);
+console.log(binary96.join(""));
