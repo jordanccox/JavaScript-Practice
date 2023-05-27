@@ -30,7 +30,8 @@ class Media {
         this._ratings.forEach(element => {
             sum += element;
         });
-        return sum / this._ratings.length;
+        sum = sum / this._ratings.length;
+        return sum.toFixed(2);
     }
 }
 
@@ -78,3 +79,14 @@ const nineteenEightyFour = new Book("1984", "George Orwell", 100);
 
 // test movie
 
+const signs = new Movie("Signs", "M. Night Shyamalan", 120);
+
+signs.addRating(5.4);
+signs.addRating(6.9);
+signs.addRating(9.3);
+signs.addRating(8.8);
+signs.addRating(7.5);
+signs.addRating(8.3);
+signs.addRating(1.3);
+
+console.log(signs.getAverageRating());
