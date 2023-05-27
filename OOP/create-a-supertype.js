@@ -1,4 +1,4 @@
-function Animal() { }
+function Animal() { };
 // Animal.protoype is a supertype whose properties we want its subtypes to inherit
 Animal.prototype = {
   constructor: Animal,
